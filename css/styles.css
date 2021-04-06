@@ -1,0 +1,336 @@
+/********************ALL PAGES ********************/
+header {
+	background-color: #8DF559;
+	padding: 20px;
+}
+body {
+	margin: 0px;
+	font-family: 'Lora', serif;
+}
+nav div { 
+	float: left;
+	margin-right: 20px;
+}
+#title {
+	position: relative;
+	color: black;
+}
+#kannadaTitle {
+	position: absolute;
+	top: 0;
+	margin-top: 45px;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+}
+h1 { 
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#team, #contact, #about, #pr {
+	color: black;
+	padding: 3px;
+}
+#about:hover, #team:hover, #contact:hover, #pr:hover { 
+	background-color: #B6FF92;
+}
+
+.clicked {
+	background-color: #B6FF92;
+	color: black;
+}
+
+.page-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+/******************************************************/
+/********************RELEASES PAGE ********************/
+
+.tile {
+	margin: 15px;
+	margin-left: 30px;
+	border: 1px solid #888;
+	position: relative;
+	float: left;
+	box-shadow: 2px 2px #222;
+}
+.tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color: #8DF559;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'Lora', serif;
+}
+
+@media (max-width: 767px) { /* Phone sizing, everything is different here.*/
+	/********************ALL PAGES ********************/
+	header{
+		height: 80px;
+	}
+	#title {
+		font-size: 24px;
+		margin-top: 0px;
+	}
+	#menu-bar {
+		margin-top: 0px;
+	}
+	#logo-img {
+		background: url('logo-image.png') no-repeat;
+		width: 35px;
+		height: 26px;
+		margin: 0px 10px 0px 10px;
+		border: 3px solid #D0D0D0;
+		box-shadow: 0 1px 2px 1px #D0D0D0;
+	}
+	#team, #contact, #about, #pr {
+		visibility: hidden;
+	}
+	#entirePanel {
+		float: right;
+	}
+	.sidepanel  {
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  height: 250px;
+	  top: 0;
+	  right: 0;
+	  background-color: #000;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	  margin-right: 0px;
+	}
+	.sidepanel a {
+	  padding-bottom: 10px;
+	  padding-top: 10px;
+	  text-decoration: none;
+	  font-size: 18px;
+	  color: #aaa;
+	  display: block;
+	  transition: 0.3s;
+	  text-align: center;
+	}
+	.closebtn:hover {
+		color: #fff;
+	}
+	.panelMenu:hover {
+		color: #000;
+		background-color: #B6FF92;
+	}
+	.sidepanel .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	}
+	.openbtn {
+	  font-size: 20px;
+	  cursor: pointer;
+	  background-color: #B6FF92;
+	  color: black;
+	  padding: 10px 15px;
+	  border: 1px solid black;
+	  float:right;
+	  position: absolute;
+	  top: 15px;
+	  right: 15px;
+	}
+	.openbtn:hover {
+	  background-color:#8DF559;
+	}
+	/*********************************************/
+	/********************RELEASES PAGE ********************/
+	.tile-container {
+		width: 40%;
+	}
+	.tile {
+		width: 100%;
+		padding-top: 100%;
+	}
+	/********************************************/
+	/******************** INDIVIDUAL RELEASE PAGE ********************/
+
+	.container {
+		position: relative;
+	}
+
+	#left-half, #right-half {
+		width: 90%;
+		float:left;
+		margin-top: 25px;
+		margin-left: 4.5%
+	}
+
+/*	#left-half {
+		left:0;
+		margin-left: 3%;
+		margin-right: 1.5%
+	}
+	#right-half {
+		right:0;
+		margin-left: 1.5%;
+		margin-right: 3%
+	}*/
+	#contact {
+		margin-right: 2px;
+	}
+	.content-categories {
+		margin: 10px;
+		background-color: pink;
+		font-size: 21px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.img-content {
+		width: 60%;
+		height: auto;
+		margin-left: 20%;
+	}
+
+}
+
+@media (min-width: 768px) { /*  tablet and bigger*/
+	header{
+		height: 100px;
+	}
+	nav {
+		margin-bottom: -15px;
+	}
+	#entirePanel {
+		visibility: hidden;
+	}
+	span div {
+		float:right;
+	}
+	#logo-img {
+		background: url('logo-image.png') no-repeat;
+		width: 70px;
+		height: 70px;
+		margin: 0px 5px 0px 0px;
+		border: 3px solid #D0D0D0;
+		box-shadow: 0 1px 2px 1px #D0D0D0;
+	}
+	#title {
+		font-size: 23px;
+		margin-bottom: 5px;
+	}
+	#pr {
+		margin-top: 15px;
+		font-size: 17px;
+	}
+	#team, #contact, #about {
+		margin-top: 15px;
+		font-size: 17px;
+	}
+	#kannadaTitle {
+		font-size: 17px;
+		margin-top: 35px;
+	}
+
+	/******************** INDIVIDUAL RELEASE PAGE ********************/
+
+	.container {
+		position: relative;
+	}
+
+	#left-half, #right-half {
+		width: 44%;
+		float:left;
+		margin-top: 25px;
+	}
+
+	#left-half {
+		left:0;
+		margin-left: 3%;
+		margin-right: 1.5%
+	}
+	#right-half {
+		right:0;
+		margin-left: 1.5%;
+		margin-right: 3%
+	}
+	#contact {
+		margin-right: 2px;
+	}
+	.content-categories {
+		margin: 10px;
+		background-color: pink;
+		font-size: 21px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.img-content {
+		width: 60%;
+		height: auto;
+		margin-left: 20%;
+	}
+	.student-name {
+		text-align: center;
+	}
+
+	/********************************************/
+	/********************RELEASES PAGE ********************/
+	.tile-container {
+		width: 30%;
+	}
+	.tile {
+		width: 100%;
+		padding-top: 100%;
+	}
+	/********************************************/
+
+}
+
+@media (min-width: 992px){  /* laptop display and bigger */
+	header {
+		height: 120px;
+	}
+	nav {
+		margin-bottom: 0px;
+	}
+	#pr {
+		margin-top: 15px;
+		font-size: 19px;
+	}
+	#logo-img {
+		background: url('logo-image.png') no-repeat;
+		width: 169px;
+		height: 107px;
+		margin: 0px 10px 0px 5px;
+		border: 3px solid #D0D0D0;
+		box-shadow: 0 1px 2px 1px #D0D0D0;
+	}
+	#team, #about, #contact {
+		margin-top: 15px;
+		font-size: 19px;
+	}
+	#kannadaTitle {
+		font-size: 20px;
+		margin-top: 45px;
+	}
+	#title {
+		font-size: 30px;
+	}
+	#contact {
+		margin-right: 5px;
+	}
+
+	/********************RELEASES PAGE ********************/
+	.tile-container {
+		width: 20%;
+	}
+	.tile {
+		width: 100%;
+		padding-top: 100%;
+	}
