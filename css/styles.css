@@ -72,7 +72,7 @@ h1 {
 	font-family: 'Lora', serif;
 }
 
-@media (max-width: 767px) { /* Phone sizing, everything is different here.*/
+@media screen and (max-width: 767px) { /* Phone sizing, everything is different here.*/
 	/********************ALL PAGES ********************/
 	header{
 		height: 80px;
@@ -200,7 +200,7 @@ h1 {
 
 }
 
-@media (min-width: 768px) { /*  tablet and bigger*/
+@media screen and (min-width: 768px) { /*  tablet and bigger*/
 	header{
 		height: 100px;
 	}
@@ -292,7 +292,7 @@ h1 {
 
 }
 
-@media (min-width: 992px){  /* laptop display and bigger */
+@media screen and (min-width: 992px){  /* laptop display and bigger */
 	header {
 		height: 120px;
 	}
