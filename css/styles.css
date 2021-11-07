@@ -1,12 +1,15 @@
-/********************ALL PAGES ********************/
+/*/********************ALL PAGES ********************/
 header {
-	background-color: #8DF559;
-	padding: 20px;
+	background-color: #B4E09A;
+	font-family: 'Baloo Tamma 2', cursive;
+	padding: 5px 10px 5px 10px;
+	box-shadow: 5px 5px 5px #21710F;
 }
 body {
 	margin: 0px;
-	font-family: 'Lora', serif;
+	background-color: #F7F3EC;
 }
+
 nav div { 
 	float: left;
 	margin-right: 20px;
@@ -14,6 +17,9 @@ nav div {
 #title {
 	position: relative;
 	color: black;
+}
+#menu-bar {
+	font-family:  'Benne', serif;
 }
 #kannadaTitle {
 	position: absolute;
@@ -33,12 +39,12 @@ h1 {
 	padding: 3px;
 }
 #about:hover, #team:hover, #contact:hover, #pr:hover { 
-	background-color: #B6FF92;
+	text-decoration: underline;
 }
 
 .clicked {
-	background-color: #B6FF92;
 	color: black;
+	font-weight: bold;
 }
 
 .page-title {
@@ -46,6 +52,7 @@ h1 {
 	font-size: 28px;
 	font-weight: bold;
 	margin-top: 25px;
+	font-family: 'Benne', serif;
 }
 .page-subtitle {
 	text-align: center;
@@ -94,17 +101,83 @@ h1 {
 }
 .content-header {
 	text-align: center;
-	margin-bottom: 5px;
-	font-size: 20px;
+	margin: 5px 0px;
+	font-size: 18px;
 	font-weight: 520;
 }
-#kaveri {
+#release-page-sub {
+	font-size: 16px;
+}
+#ganesha {
 	width: 80%;
 	margin-left: 10%;
 }
 #anvi-video {
-	width: 30%;
-	margin-left: 35%;
+	width: 50%;
+	margin-left: 25%;
+}
+.release-categories {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#second-header {
+	height: 40px;
+	margin-top: 8px;
+	font-family:  'Benne', serif;
+	font-size: 22px;
+	background-color: #B4E09A;
+	box-shadow: 0px 5px 10px #21710F;
+}
+.page-content {
+	width: 90%;
+/*	border: 1px solid #21710F;*/
+	display: block;
+	overflow: auto;
+	margin: 35px auto;
+	padding-bottom: 60px;
+	box-shadow: 5px 5px 15px #21710F;
+
+}
+#informational {
+	clear: left;
+	display: none;
+}
+#entertainment {
+	clear:left;
+	display: none;
+}
+.content-container {
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 2px #ccc;
+	margin-bottom: 10px;
+	background-color: #FAF7F3; 
+}
+#ganesha:hover + .click-to-enlarge {
+    visibility: visible;
+}
+.release-categories-clicked {
+	background-color: #21710F;
+	margin-top: -10px;
+	height: 45px;
+	padding-top: 5px;
+	color: white;
+}
+.img-content {
+    transition:transform 0.35s ease;
+}
+
+.img-content:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.release-categories:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+iframe {
+	width: 80%;
+	margin-left: 10%;
 }
 /**************HOME PAGE ONLY****************/
 
@@ -188,13 +261,16 @@ img {vertical-align: middle;}
 .branch-logo-containers {
 	height: auto;
 	float: left;
-	border: 2px solid #000;
-	border-radius: 15px;
-	box-shadow: 0 1px 2px 1px #222;
+	border: 1px solid #000;
+/*	border-radius: 15px;
+*/	box-shadow: 0 1px 2px 1px #222;
 }
 
 .branch-logos {
 	width: 100%;
+}
+.branch-logo-containers:hover {
+	box-shadow: 0 1px 2px 3px #222;
 }
 a{
 	color: black;
@@ -206,6 +282,11 @@ a div {
 img{
 	width: 95%;
 	height: 95%;
+}
+.branch-names {
+	background-color: #aaa;
+	color: #000;
+	padding: 5px 0px 5px 0px;
 }
 /********************CONTACT PAGE ********************/
 #email {
@@ -227,13 +308,13 @@ img{
 		padding: 20px 5px 10px 5px;
 	}
 	#title {
-		font-size: 18px;
+		font-size: 16px;
 		margin-top: 5px;
 		margin-left: 5px;
 	}
 	#kannadaTitle {
 		margin-top: 30px;
-		font-size: 16px;
+		font-size: 12px;
 	}
 	#menu-bar {
 		margin-top: 0px;
@@ -264,6 +345,9 @@ img{
 	  transition: 0.5s;
 	  padding-top: 60px;
 	  margin-right: 0px;
+	}
+	.homepage-sidepanel {
+		margin-right: 20px;
 	}
 	.sidepanel a {
 	  padding-bottom: 10px;
@@ -438,6 +522,26 @@ img{
 		right:0;
 		margin-left: 1.5%;
 		margin-right: 3%
+	}
+
+	#left-third, #middle-third, #right-third {
+		width: 31%;
+		float:left;
+		margin-top: 35px;
+	}
+	#left-third img, #middle-third img, #right-third img,
+	#left-third video, #middle-third video, #right-third video{
+		box-shadow: 2px 2px 2px #aaa;
+	}
+	#left-third {
+		left:0;
+		margin-left: 2%;
+		margin-right: 0.5%
+	}
+	#right-third {
+		right:0;
+		margin-left: 0.5%;
+		margin-right: 2%
 	}
 	#contact {
 		margin-right: 2px;
