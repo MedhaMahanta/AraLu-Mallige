@@ -34,8 +34,8 @@ function showSlides() {
   setTimeout(showSlides, 3000); 
 }
 
-function openColumn(open) {
-  for (i = 1; i < 6; i++) {
+function openColumn(open, totalTabs) {
+  for (i = 1; i <= totalTabs; i++) {
     nameOfClosedTab = "tab" + i.toString();
     nameOfClosedPage = "page" + i.toString();
     document.getElementById(nameOfClosedPage).style.display = "none";
